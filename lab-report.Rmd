@@ -1,0 +1,67 @@
+---
+title: "Lab 3 Report"
+author: "___"
+date: "`r format(Sys.Date())`"
+output: github_document
+---
+
+Instructions for this lab report can be found on [Your assignment section of Lab Assignment 3 Introduction to ggplot2](https://biol275-msum.github.io/introduction-to-ggplot2.html#your-assignment) on the lab website.
+
+## Fireflies
+
+> A. Insert an R code chunk and create a graph depicting the frequency distribution of the 35 mass measurements. It should have legible text and appropriate axis labels.
+
+\_\_\_
+
+> B. What type of graph did you choose in part (A)? Why?
+
+\_\_\_
+
+> C. Describe the shape of the frequency distribution. What are its main features?
+
+\_\_\_
+
+> D. What term would be used to describe the largest measurement in the frequency distribution? You can refer to the lecture slides, your notes, or the textbook.
+
+\_\_\_
+
+## Bird orders
+
+I read the data using the code provided by the instructor. The dataset is from the auk package and was originally named ebird_taxonomy. I converted it to a tibble, removed non-species taxa, and named the new dataset birds.
+
+```{r}
+library(auk)                          # load the auk package
+birds <- ebird_taxonomy %>%           # start with the ebird_taxonomy data
+  as_tibble() %>%                     # tibbles print better in the console
+  filter(category == "species")       # remove non-species taxa
+```
+
+> E. How many bird species are in the new birds dataset? How did you find out?
+
+\_\_\_
+
+> H. How many orders are there? You can get this right by counting on the graph, but you will only get full points if you use some code to figure it out.
+
+\_\_\_
+
+> F. Insert an R code chunk and create a graph depicting the distribution of orders in the birds dataset. Sort the orders with the most frequent on the left. It should have legible text and appropriate axis labels.
+
+\_\_\_
+
+> G. What kind of graph did you create? Why?
+
+\_\_\_
+
+## Links to peer review
+
+I reviewed \_\_\_'s lab report at this URL: \_\_\_
+
+\_\_\_ reviewed my lab report at this URL: \_\_\_
+
+## Session Info
+
+Here is my session information:
+
+```{r}
+sessioninfo::session_info()
+```

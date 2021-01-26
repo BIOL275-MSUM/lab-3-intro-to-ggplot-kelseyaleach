@@ -1,0 +1,25 @@
+---
+title: "Lab 3: Introduction to ggplot"
+author: "___"
+date: "`r format(Sys.Date())`"
+output: github_document
+---
+
+> INSTRUCTIONS: REMOVE THIS LINE AND REPLACE ____ WITH YOUR OWN TEXT
+
+Welcome to my Lab 2 repository for Quantitative Biology BIOL 275 at MSUM.
+
+## Lab objectives
+
+The objectives of this lab are:
+
+- ___
+- ___
+
+## Repository contents
+
+The repository contains the following scripts:
+
+- [Lab Report 3](lab-report.md)
+- ___
+
