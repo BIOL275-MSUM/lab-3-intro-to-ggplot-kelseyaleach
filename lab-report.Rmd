@@ -1,6 +1,6 @@
 ---
 title: "Lab 3 Report"
-author: "___"
+author: "Kelsey Leach"
 date: "`r format(Sys.Date())`"
 output: github_document
 ---
@@ -11,7 +11,13 @@ Instructions for this lab report can be found on [Your assignment section of Lab
 
 > A. Insert an R code chunk and create a graph depicting the frequency distribution of the 35 mass measurements. It should have legible text and appropriate axis labels.
 
-\_\_\_
+```{r}
+
+
+```
+
+
+
 
 > B. What type of graph did you choose in part (A)? Why?
 
