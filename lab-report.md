@@ -1,7 +1,7 @@
 Lab 3 Report
 ================
 Kelsey Leach
-2021-02-01
+2021-02-02
 
 Instructions for this lab report can be found on [Your assignment
 section of Lab Assignment 3 Introduction to
@@ -15,6 +15,7 @@ on the lab website.
 > and appropriate axis labels.
 
 ``` r
+#This section brings in the firefly data, counts the number of fireflies for each mass, and creates a histogram with the data.
 library(tidyverse)
 ```
 
@@ -121,7 +122,8 @@ converted it to a tibble, removed non-species taxa, and named the new
 dataset birds.
 
 ``` r
-library(auk)                          # load the auk package
+#This section brings in the bird data and removes the non-species taxa. 
+library(auk)                          
 ```
 
     ## auk 0.4.2 is designed for EBD files downloaded after 2019-08-15. 
@@ -129,9 +131,9 @@ library(auk)                          # load the auk package
     ## eBird taxonomy version:  2019
 
 ``` r
-birds <- ebird_taxonomy %>%           # start with the ebird_taxonomy data
-  as_tibble() %>%                     # tibbles print better in the console
-  filter(category == "species")       # remove non-species taxa
+birds <- ebird_taxonomy %>%           
+  as_tibble() %>%                     
+  filter(category == "species")       
 ```
 
 > E. How many bird species are in the new birds dataset? How did you
@@ -148,6 +150,7 @@ There are 41 bird orders. This can be determined by looking at the
 number of rows returned by the distinct function.
 
 ``` r
+#This section prints all of the bird data and then creates a list of all of the orders present in the data.
 birds
 ```
 
@@ -192,6 +195,7 @@ distinct(birds, order)
 > axis labels.
 
 ``` r
+#This section creates a bar graph with the bird order data. 
 ggplot(data = birds) +
   geom_bar(mapping = aes(x=fct_infreq(order)), fill = "#C5351B", 
            width = 0.8) +
@@ -238,7 +242,7 @@ sessioninfo::session_info()
     ##  collate  en_US.UTF-8                 
     ##  ctype    en_US.UTF-8                 
     ##  tz       America/Chicago             
-    ##  date     2021-02-01                  
+    ##  date     2021-02-02                  
     ## 
     ## ─ Packages ───────────────────────────────────────────────────────────────────
     ##  package     * version date       lib source        
