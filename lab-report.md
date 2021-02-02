@@ -220,9 +220,11 @@ distribution of one categorical variable, in this case, bird order
 
 ## Links to peer review
 
-I reviewed \_\_\_’s lab report at this URL: \_\_\_
+I reviewed Tyler Edvall’s lab report at this URL:
+<https://github.com/BIOL275-MSUM/lab-3-intro-to-ggplot-tdedvall>
 
-\_\_\_ reviewed my lab report at this URL: \_\_\_
+Tyler Edvall reviewed my lab report at this URL:
+<https://github.com/BIOL275-MSUM/lab-3-intro-to-ggplot-kelseyaleach/issues>
 
 ## Session Info
 
