@@ -1,0 +1,24 @@
+Lab 3: Introduction to ggplot
+================
+Kelsey Leach
+2021-02-02
+
+Welcome to my Lab 3 repository for Quantitative Biology BIOL 275 at
+MSUM.
+
+## Lab objectives
+
+The objectives of this lab are:
+
+  - To learn how to use the ggplot function to create a histogram and a
+    bar graph
+  - To learn how to appropriately format the histogram and the bar graph
+    so that it is legible and useful
+
+## Repository contents
+
+The repository contains the following scripts:
+
+  - [Lab Report 3](lab-report.md)
+  - [Fireflies Draft](fireflies.R)
+  - [Bird Orders Draft](birdorders.R)
