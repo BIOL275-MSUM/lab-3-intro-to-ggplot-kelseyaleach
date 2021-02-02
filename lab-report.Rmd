@@ -12,6 +12,7 @@ Instructions for this lab report can be found on [Your assignment section of Lab
 > A. Insert an R code chunk and create a graph depicting the frequency distribution of the 35 mass measurements. It should have legible text and appropriate axis labels.
 
 ```{r}
+#This section brings in the firefly data, counts the number of fireflies for each mass, and creates a histogram with the data.
 library(tidyverse)
 firefly_data <- read_csv("https://whitlockschluter.zoology.ubc.ca/wp-content/data/chapter02/chap02q19FireflySpermatophoreMass.csv")
 
@@ -56,10 +57,11 @@ The measurement with the highest frequency would be the mode.
 I read the data using the code provided by the instructor. The dataset is from the auk package and was originally named ebird_taxonomy. I converted it to a tibble, removed non-species taxa, and named the new dataset birds.
 
 ```{r}
-library(auk)                          # load the auk package
-birds <- ebird_taxonomy %>%           # start with the ebird_taxonomy data
-  as_tibble() %>%                     # tibbles print better in the console
-  filter(category == "species")       # remove non-species taxa
+#This section brings in the bird data and removes the non-species taxa. 
+library(auk)                          
+birds <- ebird_taxonomy %>%           
+  as_tibble() %>%                     
+  filter(category == "species")       
 ```
 
 > E. How many bird species are in the new birds dataset? How did you find out?
@@ -71,6 +73,7 @@ There are 10,721 bird species in the dataset. I found this by looking at the num
 There are 41 bird orders. This can be determined by looking at the number of rows returned by the
 distinct function. 
 ```{r}
+#This section prints all of the bird data and then creates a list of all of the orders present in the data.
 birds
 distinct(birds, order)
 ```
@@ -79,7 +82,7 @@ distinct(birds, order)
 > F. Insert an R code chunk and create a graph depicting the distribution of orders in the birds dataset. Sort the orders with the most frequent on the left. It should have legible text and appropriate axis labels.
 
 ```{r fig.height=5, fig.width=9}
-
+#This section creates a bar graph with the bird order data. 
 ggplot(data = birds) +
   geom_bar(mapping = aes(x=fct_infreq(order)), fill = "#C5351B", 
            width = 0.8) +
